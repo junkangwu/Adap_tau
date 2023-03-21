@@ -3,10 +3,10 @@ This is the PyTorch implementation for our WWW 2023 paper.
 > Jiawei Chen, Junkang Wu, Jiancan Wu, Sheng Zhou, Xuezhi Cao, Xiangnan He. 2023. Adap-tau: Adaptively Modulating Embedding Magnitude for Recommendation [arxiv link](https://arxiv.org/pdf/2302.04775.pdf)
 
 ## Dependencies
-pytorch==1.11.0
-numpy==1.21.5
-scipy==1.7.3
-torch-scatter==2.0.9
+- pytorch==1.11.0
+- numpy==1.21.5
+- scipy==1.7.3
+- torch-scatter==2.0.9
 
 ## Training model:
 cd bash
