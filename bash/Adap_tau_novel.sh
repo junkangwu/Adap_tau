@@ -38,7 +38,7 @@ then
         echo "start to drop embedding"
         name1="${dataset}_${gnn_name}_mode_${tau_mode}_${sampling_method}_${generate_mode}_TAU_${loss_fn}_${bsz}_${n_negs}_lr_${lr}_l2_${l2}_t1_${t_1}_t2_${t_2}_drop"
         echo $name1
-        CUDA_VISIBLE_DEVICES=$gpus python main_ustc_v2.py --name $name1 --dataset $dataset --gnn $gnn --dim 64 --lr $lr \
+        CUDA_VISIBLE_DEVICES=$gpus python main.py --name $name1 --dataset $dataset --gnn $gnn --dim 64 --lr $lr \
                 --batch_size $bsz --gpu_id 0 --logdir $logdir \
                 --n_negs  $n_negs --l2 $l2 --mess_dropout True --mess_dropout_rate 0.1  \
                 --loss_fn $loss_fn --sampling_method $sampling_method \
@@ -49,7 +49,7 @@ else
         echo "start to drop embedding"
         name1="${dataset}_${gnn_name}_mode_${tau_mode}_${sampling_method}_${generate_mode}_TAU_${loss_fn}_${bsz}_${n_negs}_lr_${lr}_l2_${l2}_t1_${t_1}_t2_${t_2}_nodrop"
         echo $name1
-        CUDA_VISIBLE_DEVICES=$gpus python main_ustc_v2.py --name $name1 --dataset $dataset --gnn $gnn --dim 64 --lr $lr \
+        CUDA_VISIBLE_DEVICES=$gpus python main.py --name $name1 --dataset $dataset --gnn $gnn --dim 64 --lr $lr \
                 --batch_size $bsz --gpu_id 0 --logdir $logdir \
                 --n_negs  $n_negs --l2 $l2  \
                 --loss_fn $loss_fn --sampling_method $sampling_method \
