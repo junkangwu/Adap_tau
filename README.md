@@ -1,6 +1,17 @@
-# Adap-tau: Adaptively Modulating Embedding Magnitude for Recommendation
+<h2 align="center">
+Adap-$\tau$: Adaptively Modulating Embedding Magnitude for Recommendation
+</h2>
+
+<div align="center">
+
+[![](https://img.shields.io/badge/paper-pink?style=plastic&logo=GitBook)](https://arxiv.org/pdf/2302.04775.pdf)
+[![](https://img.shields.io/badge/-github-green?style=plastic&logo=github)](https://github.com/junkangwu/Adap_tau) 
+<!-- [![](https://img.shields.io/badge/-youtube-red?style=plastic&logo=airplayvideo)](https://www.youtube.com/watch?v=9d0eXaO_kOw) 
+[![](https://img.shields.io/badge/-slides-grey?style=plastic&logo=adobe)](https://cs.stanford.edu/~shirwu/slides/dir-iclr22.pdf)  -->
+</div>
+
 This is the PyTorch implementation for our WWW 2023 paper. 
-> Jiawei Chen, Junkang Wu, Jiancan Wu, Sheng Zhou, Xuezhi Cao, Xiangnan He. 2023. Adap-tau: Adaptively Modulating Embedding Magnitude for Recommendation [arxiv link](https://arxiv.org/pdf/2302.04775.pdf)
+> Jiawei Chen, Junkang Wu, Jiancan Wu, Sheng Zhou, Xuezhi Cao, Xiangnan He. 2023. Adap-$\tau$: Adaptively Modulating Embedding Magnitude for Recommendation [arxiv link](https://arxiv.org/pdf/2302.04775.pdf)
 
 ## Dependencies
 - pytorch==1.11.0
