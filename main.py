@@ -192,11 +192,11 @@ if __name__ == '__main__':
     sample = Sample(user_dict, n_users, n_items, sampling_method=args.sampling_method, train_cf=train_cf)
     train_cf = torch.LongTensor(np.array([[cf[0], cf[1]] for cf in train_cf], np.int32))
     """define model"""
-    from modules.MF_simplex import MF
-    from modules.LGN_simplex import lgn_frame
-    if args.gnn == 'mf_simplex':
+    from modules.MF_tau import MF
+    from modules.LGN_tau import lgn_frame
+    if args.gnn == 'mf':
         model = MF(n_params, args, norm_mat, logger).to(device)
-    elif args.gnn == "lgn_simplex":
+    elif args.gnn == "lgn":
         model = lgn_frame(n_params, args, norm_mat, logger).to(device)
     else:
         raise NotImplementedError

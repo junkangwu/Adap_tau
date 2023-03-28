@@ -22,10 +22,10 @@ gnn="${14}"
 tau_mode="${15}"
 cd ..
 
-if [[ $gnn = "mf_simplex" ]]
+if [[ $gnn = "mf" ]]
 then
         gnn_name="MF"
-elif [[ $gnn = "lgn_simplex" ]]
+elif [[ $gnn = "lgn" ]]
 then
         gnn_name="LGN"
 else

@@ -1,7 +1,7 @@
 '''
-Created on October 1, 2020
+Created on March 1st, 2023
 
-@author: Tinglin Huang (huangtinglin@outlook.com)
+@author: Junkang Wu (jkwu0909@gmail.com)
 '''
 from tarfile import POSIX_MAGIC
 from numpy.core.fromnumeric import size
