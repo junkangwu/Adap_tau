@@ -68,7 +68,6 @@ bash Adap_tau_novel.sh gowalla 1e-3 1e-5 3 1024 2048 nopdrop 0.8 0.6 no_sample 0
 # Adap_tau
 bash Adap_tau_novel.sh gowalla 1e-3 1e-5 3 1024 2048 nopdrop 0.8 0.6 no_sample 0 100 nocosine lgn weight_mean
 ```
-111
 The [training log](https://github.com/junkangwu/Adap_tau/tree/master/outputs) is also provided. The results fluctuate slightly under different running environment.
 
 For any clarification, comments, or suggestions please create an issue or contact me (jkwu0909@mail.ustc.edu.cn).
