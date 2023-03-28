@@ -20,6 +20,7 @@ This is the PyTorch implementation for our WWW 2023 paper.
 - torch-scatter==2.0.9
 
 ## Training model:
+- mkdir log
 - cd bash
 ### MF
 #### yelp2018
