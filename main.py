@@ -326,7 +326,7 @@ if __name__ == '__main__':
             if valid_ret[eval_str[0]][eval_str[1] - 1] > best_ndcg:
                 best_ndcg = valid_ret[eval_str[0]][eval_str[1] - 1]
                 kill_cnt = 0
-                save_path = args.out_dir + args.name + '.ckpt'
+                save_path = os.path.join(args.out_dir,  args.name + '.ckpt')
                 torch.save(model.state_dict(), save_path)
             else:
                 kill_cnt += 1
@@ -334,7 +334,7 @@ if __name__ == '__main__':
                     break
     # test
     logger.info('start to test!!\n')
-    load_path = args.out_dir + args.name + '.ckpt'
+    load_path = os.path.join(args.out_dir,  args.name + '.ckpt')
     model.load_state_dict(torch.load(load_path), False)
     model.eval()
     with torch.no_grad():
